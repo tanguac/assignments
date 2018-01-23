@@ -1,2 +1,3 @@
-# assignments
-A repository of assignments for the LIS 467
+# Assignments
+
+This is repository of assignments for the LIS 467.
