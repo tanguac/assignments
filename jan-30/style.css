@@ -1,0 +1,12 @@
+body {
+  background-color: ghostwhite;
+  color: navy;
+  font-family: "Verdana", sans-serif;
+  text-indent: 50px;
+}
+h1 {
+  font-variant: small-caps;
+}
+p {
+  text-indent: 100px;
+}
