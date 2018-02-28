@@ -15,15 +15,34 @@ h1, h2, h3, nav {
 }
 
 h1, h2, h3 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: .5rem;
 }
+a.hidden-link{
+  display:block;
+  width=100%;
+  color:#6d6fae;
+  background-color:#6d6fae;
+}
+a.hidden-link:focus {
+  color:white;
+}.hidden {
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
 
 /** Header **/
 header {
     background-color: #6d6fae;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 header img {
@@ -37,9 +56,11 @@ nav {
     display: flex;
     justify-content: flex-end;
     height: 2rem;
-    background-color: #6d6fae;
+    background-color: #4C508A;
     color: white;
     position: relative;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 nav div.dropdown {
@@ -51,57 +72,88 @@ nav div.dropdown {
 }
 
 .dropdown-content a {
-    display: block;
-    text-decoration: none;
-    color: #eaebf7;
-    margin-bottom: .5rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: .5rem;
 }
 
 .dropdown-content {
-    display: none;
-    background-color: #999acc;
-    position: relative;
-    padding: .5rem
+  display: none;
+  background-color: #999acc;
+  position: relative;
+  padding: .5rem
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
-    position: absolute;
-    top: 32px
+  display: block;
+  position: absolute;
+  top: 32px
 }
 
 div.dropbtn {
-    font-size: 16px;
-    line-height: 16px;
-    background-color: transparent;
-    color: #ffffff;
-    text-transform: none;
-    cursor: pointer;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: none;
+  cursor: pointer;
 }
 
 
 /** Stuff in the main body **/
+main {
+  padding-left: 6rem;
+  padding-right: 6rem;
+  display: flex;
+  align-content:stretch;
+  margin-bottom:1rem;
+}
 article p {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.fables {
+  flex: 1 50%;
 }
 
 .moral {
-    font-style: italic;
+  font-weight: bold;
 }
 
 .link-to-source {
-    opacity: .5;
+  opacity: 80;
 }
 
 #about-aesop {
-    background-color: #fffbd5;
-    padding: 1em;
-    margin-bottom: 2rem
+  background-color: #fffbd5;
+  padding: 1em;
+  margin-bottom: 2rem
 }
-
-
+aside {
+  width: 25rem;
+}
+img.scroll{
+  width: 12.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+#boys-and-frog img, #belling-the-cat img{
+  float:left;
+  margin:1rem;
+}
+#tortoise-and-ducks img{
+  float:right;
+  margin:1rem;
+}
 /* Footer */
 footer {
-    background-color: #cfc354;
-    color: #fffbd5;
+  background-color: #cfc354;
+  color: #000000;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  text-align:center;
+  padding-top:5rem;
+  padding-bottom:5rem;
 }
