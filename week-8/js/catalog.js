@@ -46,7 +46,7 @@ let search_input=document.querySelector("#search-input");
 let search_button=document.querySelector("#search-button");
 search_button.onclick=handleSearchButtonClick;
 
-function handleSearchButtonClick(){
+function handleSearchButtonClick() {
   console.log(search_input.value);
   search(search_input.value);
 }
