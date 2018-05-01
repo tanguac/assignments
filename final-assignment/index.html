@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118146066-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118146066-1');
+  </script>
+  <script>
+    function getDate() {
+      let d=new Date();
+      let n=d.getDay();
+      if (n>0&&n<5) {
+        document.getElementById("today").innerHTML="<p>Today's Hours: 10am - 4pm</p>";
+      } else {
+        document.getElementById("today").innerHTML="<p>Today's Hours: Closed</p>";
+      }
+    }
+  </script>
+  <link rel="icon" type="image/ico" href="imgs/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Institute Archives and Special Collections</title>
+</head>
+
+<body onload="getDate()">
+  <header>
+    <div class="libheader">
+      <a href="http://libraries.mit.edu"><img src="imgs/Lib_bl_l_grey1_med.png"  alt="MIT Libraries"/></a>
+    </div>
+    <div>
+      <h1>Institute Archives <br/>&amp; Special Collections</h1>
+    </div>
+ </header> 
+ <nav>
+    <div class="menubar">
+      <ul class="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="policies.html">Policies</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="collections.html">Explore our Collections</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav> 
+  <main>
+    <div class="clearfix">
+      <div class="flexRow">
+        <div class="flexColumn">
+      	  <div id="today"></div>
+          <div class="intro">
+            <h2>Welcome</h2>
+            <p>Id pri idque feugait scripserit. Eos nisl homero maiorum cu, et mel magna melius animal. No mei vitae facilisi, ludus urbanitas deseruisse usu an, vim at falli feugait oporteat. Wisi dicat movet ei nam. Ei sit corrumpit definitiones.
+            </p>
+          </div>
+          <div class="quick">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>Id</li>
+              <li>Pri</li>
+              <li>Idque</li>
+              <li>Feugait</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hours">
+          <h2>Hours</h2>
+
+          <h3>Reading Room</h3>
+          <ul>
+            <li>Monday-Thursday: 10am - 4pm</li>
+            <li>Friday: Closed</li>
+          </ul>
+          <h3>Institute Archives</h3>
+          <ul>
+            <li>Monday-Friday: 9am - 5pm</li>
+          </ul>
+          <h3>Maihaugen Gallery</h3>
+          <ul>
+            <li>Monday-Friday: 10am - 4pm</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <img src="imgs/MIT-logo-with-spelling-design1-large-lightgray-white.svg" alt="Massachusetts Institute of Technology" id="MITlogo">
+    <div class="address">
+        Institute Archives &amp; Special Collections
+        <br/>77 Massachusetts Avenue, Room 14N-118
+        <br/>Cambridge, MA 02139-4307
+    </div>
+
+  </footer>
+</body>
+
+</html>

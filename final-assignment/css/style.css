@@ -1,0 +1,271 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 0px 50px 0px 50px;
+  background-color: black;
+}
+
+main {
+  background-color: white;
+  background-image: url("/imgs/pentagram2.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  border: 0;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.hours {
+  background-color: inherit;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h1 {
+  display: block;
+  background-color: white;
+  border: 0;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+}
+
+div.libheader {
+  display: block;
+  overflow: hidden;
+  padding: 10px;
+  height: 85px;
+  width: auto;
+  border: 0;
+  margin: 0;
+  background-color: black;
+}
+
+div.libheader img {
+  -ms-transform: translate(-10px, -80px);
+  /* IE 9 */
+  -webkit-transform: translate(-10px, -80px);
+  /* Safari */
+  transform: translate(-10px, -80px);
+  height: 250px;
+  border: 0;
+  margin: 0;
+}
+
+#rssOutput {
+  display: block;
+  height: auto;
+  min-height: 100%;
+  padding-top:40px;
+  background-color:rgba(255,255,255,0.7);
+}
+.flexColumn {
+  flex-grow:2;
+  flex-direction: column;
+  display:flex;
+}
+.flexRow {
+  display:flex;
+}
+#today{
+  font-weight:bold;
+  font-size:1.1em;
+  float:left;
+}
+div.intro{
+  background-color:rgba(255,255,255,0.7);
+}
+div.quick {
+  background-color:rgba(255,255,255,0.7);
+}
+.quick ul {
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+ 
+div.quick li::before {
+    color: #0000EE;
+    content:"\2794";
+    padding-right:5px;
+}
+div.hours {
+  flex-grow:1;
+  float: right;
+  min-width:250px;
+  background-color:rgba(255,255,255,0.7);
+}
+
+div.hours ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+div.hours h3 {
+  font-size: 1.1em;
+}
+
+div.menubar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #d0d0d0;
+  justify-content: space-between;
+  align-items: stretch;
+  width:auto;
+  border:0;
+  padding:0;
+  margin:0;
+}
+ul.menubar {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  align-content: stretch;
+}
+
+ul.menubar li {
+  display: inline-block;
+  justify-content: space-between;
+  align-content: stretch;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px 20px 10px 20px;
+  min-width: 12%;
+}
+
+ul.menubar li:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+ul.menubar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.channel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.button-bar {
+  display: block;
+  width: 100%;
+  background-color: #d0d0d0;
+}
+
+button.blog-selector {
+  background-color: #d0d0d0;
+  color: black;
+  padding: 10px 30px;
+  border:0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 34%;
+  float: left;
+}
+
+button.blog-selector:first-of-type {
+  margin-left: -20px;
+}
+
+button.blog-selector:last-of-type {
+  margin-right: -20px;
+}
+
+button.blog-selector:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
+}
+
+.blog-item {
+  display: block;
+  border-left: 5px solid grey;
+  padding: 20px 10px;
+}
+
+.blog-item a {
+  text-decoration: none;
+}
+
+a.blog-item-title {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.blog-item a:hover {
+  text-decoration: underline;
+}
+
+.section-block {
+  display: block;
+  border: 1px solid grey;
+  padding: 10px 10px;
+  margin: 20px 20px;
+  background-color:rgba(255,255,255,0.7);
+}
+
+
+.staff-profile {
+  display: block;
+  border-left: 5px solid grey;
+  padding: 10px 10px;
+  margin: 20px 10px;
+}
+
+.staff-profile h3 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.staff-profile img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right:20px;
+}
+
+.staff-profile p {
+  padding-top: 0;
+}
+
+span.staff-position {
+  font-style: italic;
+}
+
+footer {
+  display: block;
+  float: clear;
+  background-color: black;
+  border: 0;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  color: white;
+}
+
+#MITlogo {
+  float: left;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+
+div.address {
+  display: block;
+  margin-left: 20px;
+  font-size: 0.8em;
+}
